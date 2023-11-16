@@ -10,12 +10,14 @@ export default styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: "700",
     color: "#26b19c",
+    textAlign: "center",
   },
   textContainer: {
     fontSize: 26,
     color: "#26b19c",
+    marginTop: 30,
   },
-  containerAround: {
+  containerHome: {
     flex: 1,
     alignItems: "center",
     backgroundColor: "whitesmoke",
