@@ -4,7 +4,7 @@ export default styles = StyleSheet.create({
   container: {
     flex: 1,
     alignItems: "center",
-    marginTop: 50,
+    justifyContent: "center",
   },
   text: {
     fontSize: 32,
@@ -13,19 +13,26 @@ export default styles = StyleSheet.create({
     textAlign: "center",
   },
   textContainer: {
-    fontSize: 26,
+    fontSize: 22,
     color: "#26b19c",
-    marginTop: 30,
+    marginTop: 8,
   },
-  containerHome: {
-    flex: 1,
-    alignItems: "center",
-    backgroundColor: "whitesmoke",
-    marginTop: 30,
-    width: "100%",
+  input: {
     borderWidth: 2,
     borderColor: "#26b19c",
-    borderTopEndRadius: 30,
-    borderTopStartRadius: 30,
+    borderRadius: 20,
+    width: "100%",
+  },
+  containerHome: {
+    alignItems: "center",
+    justifyContent: "center",
+    backgroundColor: "whitesmoke",
+    marginTop: 30,
+    width: "90%",
+    height: "50%",
+    borderWidth: 2,
+    borderColor: "#26b19c",
+    borderRadius: 30,
+    marginBottom: 30,
   },
 });

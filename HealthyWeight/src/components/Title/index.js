@@ -4,10 +4,10 @@ import styles from "../../styles/style-home";
 
 const Title = () => {
   return (
-    <SafeAreaView>
+    <>
       <Text style={styles.text}>HealthyWeight</Text>
       <Text style={styles.text}>O seu app de cálculo IMC!</Text>
-    </SafeAreaView>
+    </>
   );
 };
 

@@ -1,10 +1,10 @@
-import Home from "./src/pages/Home";
-import Login from "./src/pages/Login";
+import { NavigationContainer } from "@react-navigation/native";
+import StackNavigate from "./routes";
 
 export default function App() {
   return (
-    <>
-      <Login />
-    </>
+    <NavigationContainer>
+      <StackNavigate />
+    </NavigationContainer>
   );
 }

@@ -3,16 +3,19 @@ import styles from "./style";
 import Input from "../../components/MeuInput";
 import SuperButton from "../../components/MeuButton";
 import { useState } from "react";
+import { useNavigation } from "@react-navigation/native";
 
 const Login = () => {
   const [email, setEmail] = useState();
   const [senha, setSenha] = useState();
 
+  const navigation = useNavigation();
+
   const myAlert = () => {
     if (!email || !senha) {
       alert("Email ou senha vazios.");
     } else {
-      alert(`Email: ${email} e Senha: ${senha}`);
+      navigation.navigate("Home");
     }
   };
 
