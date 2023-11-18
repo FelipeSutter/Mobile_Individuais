@@ -6,6 +6,13 @@ import ResultImc from "./ResultImc";
 const Form = () => {
   const [height, setHeight] = useState();
   const [weight, setWeight] = useState();
+  const [messageImc, setMessageImc] = useState("Preencha o peso e a altura");
+  const [imc, setImc] = useState();
+  const [textButton, setTextButton] = useState("Calcular");
+
+  const imcCalculator = () => {
+    return setImc((weight / (height * height)).toFixed(2));
+  };
 
   return (
     <SafeAreaView style={styles.containerHome}>
